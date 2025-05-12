@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = document.getElementById('feedbackEmail').value;
             const message = document.getElementById('feedbackMessage').value;
 
-            fetch('feedback.php', {
+            fetch('https://EchoApp.great-site.net/feedback.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
