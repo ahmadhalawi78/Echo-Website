@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Echo Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-content">
+      <img src="images/logo.png" class="logo" alt="Echo Logo">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Support. Connect. Empower.</h1>
+      <p>Using real-time tools, Google Maps, and intelligent matching to guide displaced people to safety and support.</p>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Help</button>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Resource Locator</h3>
+        <p>Find the nearest shelters, medical aid, food supplies, and educational resources.</p>
+      </div>
+      <div class="card">
+        <h3>News & Updates</h3>
+        <p>Integrated News API to dynamically fetch and display real-time news content within the app.</p>
+      </div>
+      <div class="card">
+        <h3>Role-Based Access Control System</h3>
+        <p>Using JWT authentication, assigning tailored workflows to several user types.</p>
+      </div>
+      <div class="card">
+        <h3>Campaign Lifecycle Management</h3>
+        <p>Enables NGOs to manage campaigns through a validated, multi-step workflow with status tracking.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="feedback" class="section">
+    <div class="card">
+      <h2>Community Feedback</h2>
+      <p>What's working? What's missing? Help us grow by sharing your thoughts.</p>
+      <form id="feedbackForm" class="app-form">
+        <input type="text" id="feedbackName" placeholder="Your name (optional)" class="form-input">
+        <input type="email" id="feedbackEmail" placeholder="Your email (optional)" class="form-input">
+        <textarea id="feedbackMessage" rows="4" placeholder="Your feedback here..." required class="form-input"></textarea>
+        <button type="submit" class="btn">Submit Feedback</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: support@echoapp.org | Phone: +961-123-456</p>
+  </section>
+
+  <footer class="footer-container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Echo</h3>
+        <p>Your path to a safe environment.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Echo Website</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="newUser@gmail.com" class="form-input" />
+          <button type="submit" class="btn secondary">Subscribe</button>
+        </form>
+        <p>Discover our app:</p>
+        <div class="app-buttons">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play" class="store-badge" style="height: 50px; width: 150px;">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge" style="height: 50px; width: 150px;">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Echo Initiative</p>
+      <div class="social-icons">
+        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
