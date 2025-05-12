@@ -14,10 +14,10 @@ $email = $data['email'] ?? null;
 $message = $data['message'];
 
 
-$host = 'localhost';
-$db = 'echo_db';
-$user = 'root';
-$pass = '';
+$host = 'sql113.infinityfree.com';
+$db = 'if0_38966111_echo_db';
+$user = 'if0_38966111';
+$pass = 'c8EUDE1sOfCFCf';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $user, $pass);
